@@ -1,4 +1,4 @@
-import { FilterTodosType } from '../App';
+import { FilterTodosType } from '../constants';
 import Todo from '../models/Todo';
 
 export const filterTodos = (todos: Todo[], filter: FilterTodosType): Todo[] => {

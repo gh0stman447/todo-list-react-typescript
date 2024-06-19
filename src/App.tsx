@@ -3,13 +3,8 @@ import Heading from './components/Heading';
 import TodoPage from './components/TodoPage';
 import Todo from './models/Todo';
 import PageLayar from './components/PageLayar';
-import {filterTodos} from './utils/todoUtils';
-
-export enum FilterTodosType {
-  all = 'all',
-  active = 'active',
-  completed = 'completed',
-}
+import { filterTodos } from './utils/todoUtils';
+import { FilterTodosType } from './constants';
 
 function App() {
   const [todos, setTodos] = useState<Todo[]>([]);

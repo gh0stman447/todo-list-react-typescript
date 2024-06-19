@@ -3,8 +3,8 @@ import AddTodoInput from './AddTodoInput';
 import Todo from '../models/Todo';
 import TodoList from './TodoList';
 import TodosOptions from './TodosOptions';
-import { FilterTodosType } from '../App';
 import { Accordion, AccordionItem, AccordionTrigger } from './ui/accordion';
+import { FilterTodosType } from '../constants';
 
 interface TodoListProps {
   todoList: Todo[];

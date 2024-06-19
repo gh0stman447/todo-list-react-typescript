@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import { FilterTodosType } from '../App';
+import { FC } from 'react';
+import { FilterTodosType } from '../constants';
 
 interface TodosOptionsProps {
   filterTodosHandler: (filter: FilterTodosType) => void;
@@ -22,7 +22,6 @@ const TodosOptions: FC<TodosOptionsProps> = ({
   incompleteCount,
   filter,
 }) => {
-
   return (
     <div className='flex justify-between items-center text-[#848484] text-xl p-4 border-t border-[#e5e7eb]'>
       <span>{incompleteCount} items left</span>
